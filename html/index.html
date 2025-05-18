@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarK Developement Shopping</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="shop-container" class="hidden">
+        <div class="shop-header">
+            <h2 id="shop-name">General Store</h2>
+            <button id="close-btn"></button>
+        </div>
+        <div class="shop-content">
+            <div class="items-section">
+                <div id="items-list"></div>
+            </div>
+            <div class="cart-section">
+                <div class="cart-header">Shopping Cart</div>
+                <div id="cart-items"></div>
+                <div class="payment-section">
+                    <div class="payment-header">Payment Method</div>
+                    <div id="payment-options"></div>
+                </div>
+                <div class="total-section">
+                    <div class="total-label">Total:</div>
+                    <div id="total-amount">$0</div>
+                </div>
+                <div class="action-buttons">
+                    <button id="purchase-btn">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

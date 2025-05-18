@@ -1,20 +1,6 @@
 local Core = nil
 local Framework = nil
 
-local function PrintBanner()
-    print([[
-^2
- ███████╗████████╗ █████╗ ██████╗ ██╗  ██╗
- ██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║ ██╔╝
- ███████╗   ██║   ███████║██████╔╝█████╔╝ 
- ╚════██║   ██║   ██╔══██║██╔══██╗██╔═██╗ 
- ███████║   ██║   ██║  ██║██║  ██║██║ ██╗
- ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝ ╚═╝^7
-    ]])
-end
-
-PrintBanner()
-
 local success = pcall(function()
     Core = exports['rsg-core']:GetCoreObject()
     Framework = 'rsg'
@@ -34,7 +20,7 @@ end
 
 print('^2[INFO] Successfully loaded ' .. Framework .. ' framework^7')
 
-local DiscordWebhook = 'https://canary.discord.com/api/webhooks/1373608388465918012/POcnYra2Hq_0lOrkrFJO4FS-7LeQoIh28xxK_1x184g5uZ2cMraOabtgjBYCjRWBJLlp'
+local DiscordWebhook = 'YOUR_DISCORD_WEBHOOK_URL'
 
 local function DebugPrint(message, type)
     if not Config.ShopkeeperSettings.debugMode then return end

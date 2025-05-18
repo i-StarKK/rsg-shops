@@ -1,3 +1,4 @@
+-- Script Created StarK In 5/19/2025 -- 
 fx_version 'cerulean'
 game 'rdr3'
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
@@ -15,7 +16,7 @@ client_scripts {
 }
 
 server_scripts {
-    'server/main.lua'
+    'server/*.lua'
 }
 
 ui_page 'html/index.html'
@@ -27,3 +28,7 @@ files {
 } 
 
 lua54 'yes'
+
+escrow_ignore {
+    'server/sv_main.lua'
+}

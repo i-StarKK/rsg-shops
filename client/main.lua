@@ -278,6 +278,8 @@ AddEventHandler('rsg-shop:client:closeShop', function()
     DebugPrint('Shop UI closed and cart cleared', 'success')
 end)
 
+
+-- Dev commands
 -- RegisterCommand('openshop', function(source, args, rawCommand)
 --     local waitTimes = {
 --         [1] = math.random(2000, 5000)
